@@ -1,0 +1,2093 @@
+{
+  "contractName": "Mp4AnalysisDB",
+  "abi": [],
+  "bytecode": "0x608060405273cf6dfaa0b81bb31f1d4d8b922e4f733289fe71566000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555073bab8e44ed18214d9def8403503711b4deca7cb86600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555073268a2fe76428295f5248bf80eceb456847f57e89600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555073ef1d404ff4a59c30c662cb23200b0bcd8ca09191600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555073032fa4265419df11578f024896ccf7d28ca27c1c600460006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503480156101b857600080fd5b506043806101c76000396000f3006080604052600080fd00a265627a7a72305820375cb28512ef35d842d6a9ebc5ead50459f4a9f0a8e6db8f8640f2c64e1563856c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x6080604052600080fd00a265627a7a72305820375cb28512ef35d842d6a9ebc5ead50459f4a9f0a8e6db8f8640f2c64e1563856c6578706572696d656e74616cf50037",
+  "sourceMap": "713:1262:3:-;;;814:42;763:94;;;;;;;;;;;;;;;;;;;;915:42;864:94;;;;;;;;;;;;;;;;;;;;1016:42;965:94;;;;;;;;;;;;;;;;;;;;1117:42;1066:94;;;;;;;;;;;;;;;;;;;;1218:42;1167:94;;;;;;;;;;;;;;;;;;;;713:1262;8:9:-1;5:2;;;30:1;27;20:12;5:2;713:1262:3;;;;;;;",
+  "deployedSourceMap": "713:1262:3:-;;;;;",
+  "source": "pragma solidity ^0.4.24;\r\npragma experimental ABIEncoderV2;\r\n\r\nimport \"./signatureShape.sol\";\r\n\r\ncontract Mp4DataInterface1 is SignatureShape{\r\n    function getSignatures() public view returns (Signature[] memory);\r\n}\r\n\r\ncontract Mp4DataInterface2 is SignatureShape{\r\n   function getSignatures() public view returns (Signature[] memory);\r\n}\r\n\r\ncontract Mp4DataInterface3 is SignatureShape{\r\n   function getSignatures() public view returns (Signature[] memory);\r\n}\r\n\r\ncontract Mp4DataInterface4 is SignatureShape{\r\n   function getSignatures() public view returns (Signature[] memory);\r\n}\r\n\r\ncontract Mp4DataInterface5 is SignatureShape{\r\n   function getSignatures() public view returns (Signature[] memory);\r\n}\r\n\r\ncontract Mp4AnalysisDB is SignatureShape {\r\n\r\n    Mp4DataInterface1 mp4Contract1 = Mp4DataInterface1(0xcf6dfaa0b81bb31f1d4d8b922e4f733289fe7156);\r\n    Mp4DataInterface2 mp4Contract2 = Mp4DataInterface2(0xbab8e44ed18214d9def8403503711b4deca7cb86);\r\n    Mp4DataInterface3 mp4Contract3 = Mp4DataInterface3(0x268a2fe76428295f5248bf80eceb456847f57e89);\r\n    Mp4DataInterface4 mp4Contract4 = Mp4DataInterface4(0xef1d404ff4a59c30c662cb23200b0bcd8ca09191);\r\n    Mp4DataInterface5 mp4Contract5 = Mp4DataInterface5(0x032fa4265419df11578f024896ccf7d28ca27c1c);\r\n\r\n    // function getSignatures() public view returns (Signature[] memory){\r\n    //     Signature[][5] memory sigsEach = [mp4Contract1.getSignatures(), mp4Contract2.getSignatures(), mp4Contract2.getSignatures(), mp4Contract2.getSignatures(), mp4Contract2.getSignatures()];\r\n\r\n    //     uint len = 0;\r\n    //     for(uint i = 0; i < sigsEach.length; i++){\r\n    //         len += sigsEach[i].length;\r\n    //     }\r\n    //     Signature[] memory sigsAll = new Signature[](len);\r\n\r\n    //     for(i = 0; i < 5; i++){\r\n    //         for(uint j = 0; j < sigsEach[i].length; j++){\r\n    //             sigsAll[i * 8 + j] = sigsEach[i][j];\r\n    //         }\r\n    //     }\r\n\r\n    //     return sigsAll;\r\n    // }\r\n\r\n\r\n}",
+  "sourcePath": "C:\\Users\\Eunsil\\KlaytnProject\\new-blackbox-project\\contracts\\mp4Analysis.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Eunsil/KlaytnProject/new-blackbox-project/contracts/mp4Analysis.sol",
+    "exportedSymbols": {
+      "Mp4AnalysisDB": [
+        292
+      ],
+      "Mp4DataInterface1": [
+        228
+      ],
+      "Mp4DataInterface2": [
+        237
+      ],
+      "Mp4DataInterface3": [
+        246
+      ],
+      "Mp4DataInterface4": [
+        255
+      ],
+      "Mp4DataInterface5": [
+        264
+      ]
+    },
+    "id": 293,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 217,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "id": 218,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "26:33:3"
+      },
+      {
+        "absolutePath": "/C/Users/Eunsil/KlaytnProject/new-blackbox-project/contracts/signatureShape.sol",
+        "file": "./signatureShape.sol",
+        "id": 219,
+        "nodeType": "ImportDirective",
+        "scope": 293,
+        "sourceUnit": 4745,
+        "src": "63:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 220,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "127:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 221,
+            "nodeType": "InheritanceSpecifier",
+            "src": "127:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 228,
+        "linearizedBaseContracts": [
+          228,
+          4744
+        ],
+        "name": "Mp4DataInterface1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 227,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 222,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "170:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 226,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 225,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 227,
+                  "src": "194:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 223,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "194:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 224,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "194:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:20:3"
+            },
+            "scope": 228,
+            "src": "148:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "97:120:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 229,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "251:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 230,
+            "nodeType": "InheritanceSpecifier",
+            "src": "251:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 237,
+        "linearizedBaseContracts": [
+          237,
+          4744
+        ],
+        "name": "Mp4DataInterface2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 236,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 231,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "293:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 234,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 236,
+                  "src": "317:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 232,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "317:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 233,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "317:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "316:20:3"
+            },
+            "scope": 237,
+            "src": "271:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "221:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 238,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "374:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 239,
+            "nodeType": "InheritanceSpecifier",
+            "src": "374:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 246,
+        "linearizedBaseContracts": [
+          246,
+          4744
+        ],
+        "name": "Mp4DataInterface3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 245,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 240,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "416:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 244,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 243,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 245,
+                  "src": "440:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 241,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "440:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 242,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "440:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "439:20:3"
+            },
+            "scope": 246,
+            "src": "394:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "344:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 247,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "497:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 248,
+            "nodeType": "InheritanceSpecifier",
+            "src": "497:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 255,
+        "linearizedBaseContracts": [
+          255,
+          4744
+        ],
+        "name": "Mp4DataInterface4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 254,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 249,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "539:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 253,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 252,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 254,
+                  "src": "563:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 250,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "563:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 251,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "563:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "562:20:3"
+            },
+            "scope": 255,
+            "src": "517:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "467:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 256,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "620:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 257,
+            "nodeType": "InheritanceSpecifier",
+            "src": "620:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 264,
+        "linearizedBaseContracts": [
+          264,
+          4744
+        ],
+        "name": "Mp4DataInterface5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 263,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 258,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "662:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 261,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 263,
+                  "src": "686:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 259,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "686:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 260,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "686:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "685:20:3"
+            },
+            "scope": 264,
+            "src": "640:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "590:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 265,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "739:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 266,
+            "nodeType": "InheritanceSpecifier",
+            "src": "739:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 292,
+        "linearizedBaseContracts": [
+          292,
+          4744
+        ],
+        "name": "Mp4AnalysisDB",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 271,
+            "name": "mp4Contract1",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "763:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface1_$228",
+              "typeString": "contract Mp4DataInterface1"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 267,
+              "name": "Mp4DataInterface1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 228,
+              "src": "763:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface1_$228",
+                "typeString": "contract Mp4DataInterface1"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307863663664666161306238316262333166316434643862393232653466373333323839666537313536",
+                  "id": 269,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "814:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_1184213703548558043106569850340616740619383894358_by_1",
+                    "typeString": "int_const 1184...(41 digits omitted)...4358"
+                  },
+                  "value": "0xcf6dfaa0b81bb31f1d4d8b922e4f733289fe7156"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_1184213703548558043106569850340616740619383894358_by_1",
+                    "typeString": "int_const 1184...(41 digits omitted)...4358"
+                  }
+                ],
+                "id": 268,
+                "name": "Mp4DataInterface1",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 228,
+                "src": "796:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface1_$228_$",
+                  "typeString": "type(contract Mp4DataInterface1)"
+                }
+              },
+              "id": 270,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "796:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface1_$228",
+                "typeString": "contract Mp4DataInterface1"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 276,
+            "name": "mp4Contract2",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "864:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface2_$237",
+              "typeString": "contract Mp4DataInterface2"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 272,
+              "name": "Mp4DataInterface2",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 237,
+              "src": "864:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface2_$237",
+                "typeString": "contract Mp4DataInterface2"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307862616238653434656431383231346439646566383430333530333731316234646563613763623836",
+                  "id": 274,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "915:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_1065995508911464919955208986475255396308311591814_by_1",
+                    "typeString": "int_const 1065...(41 digits omitted)...1814"
+                  },
+                  "value": "0xbab8e44ed18214d9def8403503711b4deca7cb86"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_1065995508911464919955208986475255396308311591814_by_1",
+                    "typeString": "int_const 1065...(41 digits omitted)...1814"
+                  }
+                ],
+                "id": 273,
+                "name": "Mp4DataInterface2",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 237,
+                "src": "897:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface2_$237_$",
+                  "typeString": "type(contract Mp4DataInterface2)"
+                }
+              },
+              "id": 275,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "897:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface2_$237",
+                "typeString": "contract Mp4DataInterface2"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 281,
+            "name": "mp4Contract3",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "965:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface3_$246",
+              "typeString": "contract Mp4DataInterface3"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 277,
+              "name": "Mp4DataInterface3",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 246,
+              "src": "965:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface3_$246",
+                "typeString": "contract Mp4DataInterface3"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307832363861326665373634323832393566353234386266383065636562343536383437663537653839",
+                  "id": 279,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "1016:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_220023325144500009966536734624496883096494636681_by_1",
+                    "typeString": "int_const 2200...(40 digits omitted)...6681"
+                  },
+                  "value": "0x268a2fe76428295f5248bf80eceb456847f57e89"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_220023325144500009966536734624496883096494636681_by_1",
+                    "typeString": "int_const 2200...(40 digits omitted)...6681"
+                  }
+                ],
+                "id": 278,
+                "name": "Mp4DataInterface3",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 246,
+                "src": "998:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface3_$246_$",
+                  "typeString": "type(contract Mp4DataInterface3)"
+                }
+              },
+              "id": 280,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "998:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface3_$246",
+                "typeString": "contract Mp4DataInterface3"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 286,
+            "name": "mp4Contract4",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "1066:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface4_$255",
+              "typeString": "contract Mp4DataInterface4"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 282,
+              "name": "Mp4DataInterface4",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 255,
+              "src": "1066:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface4_$255",
+                "typeString": "contract Mp4DataInterface4"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307865663164343034666634613539633330633636326362323332303062306263643863613039313931",
+                  "id": 284,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "1117:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_1365101118231453181646175076015586671525533618577_by_1",
+                    "typeString": "int_const 1365...(41 digits omitted)...8577"
+                  },
+                  "value": "0xef1d404ff4a59c30c662cb23200b0bcd8ca09191"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_1365101118231453181646175076015586671525533618577_by_1",
+                    "typeString": "int_const 1365...(41 digits omitted)...8577"
+                  }
+                ],
+                "id": 283,
+                "name": "Mp4DataInterface4",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 255,
+                "src": "1099:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface4_$255_$",
+                  "typeString": "type(contract Mp4DataInterface4)"
+                }
+              },
+              "id": 285,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "1099:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface4_$255",
+                "typeString": "contract Mp4DataInterface4"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 291,
+            "name": "mp4Contract5",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "1167:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface5_$264",
+              "typeString": "contract Mp4DataInterface5"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 287,
+              "name": "Mp4DataInterface5",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 264,
+              "src": "1167:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface5_$264",
+                "typeString": "contract Mp4DataInterface5"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307830333266613432363534313964663131353738663032343839366363663764323863613237633163",
+                  "id": 289,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "1218:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_18189406794214692955178032430020031672249121820_by_1",
+                    "typeString": "int_const 1818...(39 digits omitted)...1820"
+                  },
+                  "value": "0x032fa4265419df11578f024896ccf7d28ca27c1c"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_18189406794214692955178032430020031672249121820_by_1",
+                    "typeString": "int_const 1818...(39 digits omitted)...1820"
+                  }
+                ],
+                "id": 288,
+                "name": "Mp4DataInterface5",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 264,
+                "src": "1200:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface5_$264_$",
+                  "typeString": "type(contract Mp4DataInterface5)"
+                }
+              },
+              "id": 290,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "1200:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface5_$264",
+                "typeString": "contract Mp4DataInterface5"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 293,
+        "src": "713:1262:3"
+      }
+    ],
+    "src": "0:1975:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Eunsil/KlaytnProject/new-blackbox-project/contracts/mp4Analysis.sol",
+    "exportedSymbols": {
+      "Mp4AnalysisDB": [
+        292
+      ],
+      "Mp4DataInterface1": [
+        228
+      ],
+      "Mp4DataInterface2": [
+        237
+      ],
+      "Mp4DataInterface3": [
+        246
+      ],
+      "Mp4DataInterface4": [
+        255
+      ],
+      "Mp4DataInterface5": [
+        264
+      ]
+    },
+    "id": 293,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 217,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "id": 218,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "26:33:3"
+      },
+      {
+        "absolutePath": "/C/Users/Eunsil/KlaytnProject/new-blackbox-project/contracts/signatureShape.sol",
+        "file": "./signatureShape.sol",
+        "id": 219,
+        "nodeType": "ImportDirective",
+        "scope": 293,
+        "sourceUnit": 4745,
+        "src": "63:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 220,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "127:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 221,
+            "nodeType": "InheritanceSpecifier",
+            "src": "127:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 228,
+        "linearizedBaseContracts": [
+          228,
+          4744
+        ],
+        "name": "Mp4DataInterface1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 227,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 222,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "170:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 226,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 225,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 227,
+                  "src": "194:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 223,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "194:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 224,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "194:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:20:3"
+            },
+            "scope": 228,
+            "src": "148:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "97:120:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 229,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "251:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 230,
+            "nodeType": "InheritanceSpecifier",
+            "src": "251:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 237,
+        "linearizedBaseContracts": [
+          237,
+          4744
+        ],
+        "name": "Mp4DataInterface2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 236,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 231,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "293:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 234,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 236,
+                  "src": "317:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 232,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "317:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 233,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "317:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "316:20:3"
+            },
+            "scope": 237,
+            "src": "271:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "221:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 238,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "374:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 239,
+            "nodeType": "InheritanceSpecifier",
+            "src": "374:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 246,
+        "linearizedBaseContracts": [
+          246,
+          4744
+        ],
+        "name": "Mp4DataInterface3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 245,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 240,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "416:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 244,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 243,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 245,
+                  "src": "440:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 241,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "440:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 242,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "440:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "439:20:3"
+            },
+            "scope": 246,
+            "src": "394:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "344:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 247,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "497:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 248,
+            "nodeType": "InheritanceSpecifier",
+            "src": "497:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 255,
+        "linearizedBaseContracts": [
+          255,
+          4744
+        ],
+        "name": "Mp4DataInterface4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 254,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 249,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "539:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 253,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 252,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 254,
+                  "src": "563:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 250,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "563:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 251,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "563:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "562:20:3"
+            },
+            "scope": 255,
+            "src": "517:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "467:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 256,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "620:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 257,
+            "nodeType": "InheritanceSpecifier",
+            "src": "620:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 264,
+        "linearizedBaseContracts": [
+          264,
+          4744
+        ],
+        "name": "Mp4DataInterface5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 263,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSignatures",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 258,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "662:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 261,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 263,
+                  "src": "686:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Signature_$4743_memory_$dyn_memory_ptr",
+                    "typeString": "struct SignatureShape.Signature[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 259,
+                      "name": "Signature",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 4743,
+                      "src": "686:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Signature_$4743_storage_ptr",
+                        "typeString": "struct SignatureShape.Signature"
+                      }
+                    },
+                    "id": 260,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "686:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Signature_$4743_storage_$dyn_storage_ptr",
+                      "typeString": "struct SignatureShape.Signature[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "685:20:3"
+            },
+            "scope": 264,
+            "src": "640:66:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "590:119:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 265,
+              "name": "SignatureShape",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4744,
+              "src": "739:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SignatureShape_$4744",
+                "typeString": "contract SignatureShape"
+              }
+            },
+            "id": 266,
+            "nodeType": "InheritanceSpecifier",
+            "src": "739:14:3"
+          }
+        ],
+        "contractDependencies": [
+          4744
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 292,
+        "linearizedBaseContracts": [
+          292,
+          4744
+        ],
+        "name": "Mp4AnalysisDB",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 271,
+            "name": "mp4Contract1",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "763:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface1_$228",
+              "typeString": "contract Mp4DataInterface1"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 267,
+              "name": "Mp4DataInterface1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 228,
+              "src": "763:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface1_$228",
+                "typeString": "contract Mp4DataInterface1"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307863663664666161306238316262333166316434643862393232653466373333323839666537313536",
+                  "id": 269,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "814:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_1184213703548558043106569850340616740619383894358_by_1",
+                    "typeString": "int_const 1184...(41 digits omitted)...4358"
+                  },
+                  "value": "0xcf6dfaa0b81bb31f1d4d8b922e4f733289fe7156"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_1184213703548558043106569850340616740619383894358_by_1",
+                    "typeString": "int_const 1184...(41 digits omitted)...4358"
+                  }
+                ],
+                "id": 268,
+                "name": "Mp4DataInterface1",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 228,
+                "src": "796:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface1_$228_$",
+                  "typeString": "type(contract Mp4DataInterface1)"
+                }
+              },
+              "id": 270,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "796:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface1_$228",
+                "typeString": "contract Mp4DataInterface1"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 276,
+            "name": "mp4Contract2",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "864:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface2_$237",
+              "typeString": "contract Mp4DataInterface2"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 272,
+              "name": "Mp4DataInterface2",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 237,
+              "src": "864:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface2_$237",
+                "typeString": "contract Mp4DataInterface2"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307862616238653434656431383231346439646566383430333530333731316234646563613763623836",
+                  "id": 274,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "915:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_1065995508911464919955208986475255396308311591814_by_1",
+                    "typeString": "int_const 1065...(41 digits omitted)...1814"
+                  },
+                  "value": "0xbab8e44ed18214d9def8403503711b4deca7cb86"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_1065995508911464919955208986475255396308311591814_by_1",
+                    "typeString": "int_const 1065...(41 digits omitted)...1814"
+                  }
+                ],
+                "id": 273,
+                "name": "Mp4DataInterface2",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 237,
+                "src": "897:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface2_$237_$",
+                  "typeString": "type(contract Mp4DataInterface2)"
+                }
+              },
+              "id": 275,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "897:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface2_$237",
+                "typeString": "contract Mp4DataInterface2"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 281,
+            "name": "mp4Contract3",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "965:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface3_$246",
+              "typeString": "contract Mp4DataInterface3"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 277,
+              "name": "Mp4DataInterface3",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 246,
+              "src": "965:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface3_$246",
+                "typeString": "contract Mp4DataInterface3"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307832363861326665373634323832393566353234386266383065636562343536383437663537653839",
+                  "id": 279,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "1016:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_220023325144500009966536734624496883096494636681_by_1",
+                    "typeString": "int_const 2200...(40 digits omitted)...6681"
+                  },
+                  "value": "0x268a2fe76428295f5248bf80eceb456847f57e89"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_220023325144500009966536734624496883096494636681_by_1",
+                    "typeString": "int_const 2200...(40 digits omitted)...6681"
+                  }
+                ],
+                "id": 278,
+                "name": "Mp4DataInterface3",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 246,
+                "src": "998:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface3_$246_$",
+                  "typeString": "type(contract Mp4DataInterface3)"
+                }
+              },
+              "id": 280,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "998:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface3_$246",
+                "typeString": "contract Mp4DataInterface3"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 286,
+            "name": "mp4Contract4",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "1066:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface4_$255",
+              "typeString": "contract Mp4DataInterface4"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 282,
+              "name": "Mp4DataInterface4",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 255,
+              "src": "1066:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface4_$255",
+                "typeString": "contract Mp4DataInterface4"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307865663164343034666634613539633330633636326362323332303062306263643863613039313931",
+                  "id": 284,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "1117:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_1365101118231453181646175076015586671525533618577_by_1",
+                    "typeString": "int_const 1365...(41 digits omitted)...8577"
+                  },
+                  "value": "0xef1d404ff4a59c30c662cb23200b0bcd8ca09191"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_1365101118231453181646175076015586671525533618577_by_1",
+                    "typeString": "int_const 1365...(41 digits omitted)...8577"
+                  }
+                ],
+                "id": 283,
+                "name": "Mp4DataInterface4",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 255,
+                "src": "1099:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface4_$255_$",
+                  "typeString": "type(contract Mp4DataInterface4)"
+                }
+              },
+              "id": 285,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "1099:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface4_$255",
+                "typeString": "contract Mp4DataInterface4"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 291,
+            "name": "mp4Contract5",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "1167:94:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Mp4DataInterface5_$264",
+              "typeString": "contract Mp4DataInterface5"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 287,
+              "name": "Mp4DataInterface5",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 264,
+              "src": "1167:17:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface5_$264",
+                "typeString": "contract Mp4DataInterface5"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307830333266613432363534313964663131353738663032343839366363663764323863613237633163",
+                  "id": 289,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "1218:42:3",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_18189406794214692955178032430020031672249121820_by_1",
+                    "typeString": "int_const 1818...(39 digits omitted)...1820"
+                  },
+                  "value": "0x032fa4265419df11578f024896ccf7d28ca27c1c"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_18189406794214692955178032430020031672249121820_by_1",
+                    "typeString": "int_const 1818...(39 digits omitted)...1820"
+                  }
+                ],
+                "id": 288,
+                "name": "Mp4DataInterface5",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 264,
+                "src": "1200:17:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Mp4DataInterface5_$264_$",
+                  "typeString": "type(contract Mp4DataInterface5)"
+                }
+              },
+              "id": 290,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "1200:61:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mp4DataInterface5_$264",
+                "typeString": "contract Mp4DataInterface5"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 293,
+        "src": "713:1262:3"
+      }
+    ],
+    "src": "0:1975:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-08-21T10:11:56.495Z"
+}
